@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    margin:0 50px ;
+    padding:0 50px ;
     background-color: white;
     position: sticky;
     z-index: 2;
@@ -74,8 +74,27 @@
 }
 
 /* -----------------------section------------- */
+
+.section1{
+    background: rgb(217, 235, 234);
+}
+.section2{
+    /* background: rgb(217, 235, 234); */
+}
+.section3{
+    /* background: rgb(217, 235, 234); */
+}
+.section4{
+    background: rgb(217, 235, 234);
+}
+.section5{
+    /* background: rgb(217, 235, 234); */
+}
+
+
+/* -------------Section------ */
 .section{
-    margin:30px 100px ;
+    padding:30px 100px ;
 }
 .parts{
     display: flex;
@@ -113,13 +132,20 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin: 30px 0; */
+    margin-top: 30px;
     text-align: center;
+}
+.flex{
+    width: 260px;
+    gap: 20px;
+    box-shadow: -2px -1px 22px -2px #d9d2d2;
+    padding: 30px;
+    
 }
 .flex h4{
     color: gray;
     font-size: 1.6rem;
-    padding: 30px 0;
+    /* padding: 30px 0; */
 }
 .flex p,span{
     font-size: 1.4rem;
@@ -169,6 +195,7 @@
     height: 230px;
     padding:20px 15px;
     text-align: center;
+    background-color: white;
 box-shadow: -4px -1px 30px -2px #d9d2d2;
 }
 
@@ -307,7 +334,8 @@ h5{
 
 /* -------Section_----- */
 .section{
-    margin:5px 20px ;
+    padding:5px 20px ;
+    /* background-color: antiquewhite; */
 }
 .parts{
     display: block;
@@ -320,22 +348,28 @@ h5{
 .parts .rightpart img{
     width: 100%;
 }
+
+/* ----------Achivments------- */
+
 .section h3{
     text-align: center;
     font-size: 23px;
     letter-spacing: 1px;
     color: rgb(56, 56, 56);
 }
-
-/* ----------Achivments------- */
-
 .flex-box{
     display: block;
+}
+.flex{
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: -2px -1px 22px -2px #d9d2d2;
+    padding: 15px;
 }
 .flex h4{
     color: gray;
     font-size: 1.6rem;
-    padding: 30px 0;
+    padding: 0;
 }
 .flex p,span{
     font-size: 1.4rem;
