@@ -1,16 +1,19 @@
-// const valueDisplays = document.querySelectorAll(".num");
-// const interval = 500;
+const observer =new IntersectionObserver((entries)=> {
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+        // else{
+        //     entry.target.classList.remove('show');
+        // }
+    });
+});
 
-// valueDisplays.forEach(valueDisplay => {
-//     let endValue = parseInt(valueDisplay.getAttribute("value"));
-//     let duration = interval / endValue;
-//     let startValue = 0;
-    
-//     let counter = setInterval(() => {
-//         valueDisplay.textContent = ++startValue;
-//         if (startValue === endValue) clearInterval(counter);
-//     }, duration);
-// });
+
+const hide=document.querySelectorAll(".hidden");
+
+hide.forEach((e)=>observer.observe(e))
 
 
 document.addEventListener("DOMContentLoaded", function() {

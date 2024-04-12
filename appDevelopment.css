@@ -3,8 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #0060c6 white;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(20%);
+    transition: all .5s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+  body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+  }
+  
+
 .container{
-    margin:0 50px ;
+    padding:0 50px ;
     background-color: white;
     position: sticky;
     z-index: 2;
@@ -73,9 +96,13 @@
     display: flex;
 }
 
+
+.section1{
+    background: rgb(217, 235, 234);
+}
 /* -------------------Sectiion---------- */
 .section{
-    margin:30px 150px ;
+    padding:30px 150px ;
 }
 .parts{
     display: flex;
@@ -231,7 +258,7 @@ h5{
     /* --------section----- */
 
     .section{
-        margin:5px 20px ;
+        padding:5px 20px ;
     }
     .parts{
         display: block;
