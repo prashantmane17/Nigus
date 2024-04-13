@@ -56,3 +56,13 @@ function showServices(){
 service.addEventListener('click',()=>{
 showServices();
 })
+
+let nav=document.querySelector("#firstUl");
+
+function openMenu(){
+ nav.style.right="0";
+}
+
+function closeMenu(){
+    nav.style.right="-200px";
+}
