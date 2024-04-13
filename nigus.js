@@ -38,12 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
 let service=document.querySelector('.services');
 let dropmenu=document.querySelector('.dropdown');
  
+let mobileDropDown=document.querySelector('.mobiledropdown');
+
 let count=1;
 
 function showServices(){
     if(count===1)
     {
         dropmenu.style.display="flex";
+        mobileDropDown.style.display="block";
         count--;
     }
     else{
@@ -60,9 +63,10 @@ showServices();
 let nav=document.querySelector("#firstUl");
 
 function openMenu(){
- nav.style.right="0";
+ nav.style.top="0";
 }
 
 function closeMenu(){
-    nav.style.right="-200px";
+    nav.style.top="-200px";
+    dropmenu.style.display="none";
 }

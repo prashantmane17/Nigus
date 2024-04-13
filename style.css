@@ -70,23 +70,35 @@ body {
     background: white;
     height: 30px;
     width: 110px;
-    
 }
 
 #firstUl li a{
+    position: relative;
     text-decoration: none;
     line-height: 1;
     display: inline-block;
     font-size: 1.2rem;
     color: #0060c6;
-   
-
+}
+#firstUl li a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #99bfe9;
+    bottom: -7px;
+    left: 0;
+    transition: width .5s linear;
+}
+#firstUl li a:hover::after{
+    width: 100%;
+    background: #0060c6;
 }
 
-/* #firstUl li a:hover{
-    background-color: #0060c6;
-    color: white;
-} */
+#firstUl li a:hover{
+    /* background-color: #0060c6; */
+    color: #b3cfec;
+}
 
 
 
@@ -117,18 +129,12 @@ body {
 .section1{
     background: rgb(217, 235, 234);
 }
-.section2{
-    /* background: rgb(217, 235, 234); */
-}
-.section3{
-    /* background: rgb(217, 235, 234); */
-}
+
+
 .section4{
     background: rgb(217, 235, 234);
 }
-.section5{
-    /* background: rgb(217, 235, 234); */
-}
+
 
 
 /* -------------Section------ */
@@ -344,32 +350,48 @@ h5{
         right: 25px;
         cursor: pointer;
     }
+    #firstUl .fa-solid{
+        /* bottom: 0; */
+        left: 48%;
+        top: 170px;
+    }
+
     .logo img{
         width: 100px;
         display: block;
-        margin-left: -10px;
+        margin-left: -65px;
     }
     #firstUl{
         display: block;
         line-height: 1.6;
         background:white ;
         position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+        top: -200px;
+        left: 0;
+        width: 100vw;
+        height: 200px;
+        /* padding-top: 50px; */
         z-index: 2;
-        transition: right 0.5s;
+        transition:top 0.5s;
     }
-    #secondUl{
-        position:static;
-        top:30px;
-        margin-top: 2px;
+    #firstUl li{
+        margin: 0 20px ;
+        padding: 15px 0;
+    }
+    #firstUl li a{
+        /* letter-spacing: 3; */
+        font-size: 1rem;
+    }
+    .mobiledropdown{
         list-style-type: none;
-        display: block;
+        position: absolute;
+        top:-30px ;
+        right: -20px;
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
     }
-   
+    
 
 /* -------Section_----- */
 .section{
