@@ -69,33 +69,48 @@ body {
  #firstUl li{
     background: white;
     height: 30px;
+    width: 110px;
+    
 }
 
 #firstUl li a{
     text-decoration: none;
-    color: black;
     line-height: 1;
     display: inline-block;
-    font-size: 1.3rem;
-   color: #0060c6;
-   position: relative;
+    font-size: 1.2rem;
+    color: #0060c6;
+   
 
 }
 
-#firstUl li a:hover{
+/* #firstUl li a:hover{
     background-color: #0060c6;
     color: white;
-}
-#secondUl{
-    position: absolute;
-    top:30px;
-    margin-top: 2px;
-    list-style-type: none;
+} */
+
+
+
+.dropdown{
+   
+    margin-top: 15px;
+    padding: 10px;
     display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    border-radius: 10px;
+    background: white;
+    height: 100px;
+    width: 60vw;
+    transition: display 0.5s;
+    box-shadow: 1px 6px 43px -27px #938787;
 }
-#firstUl li:hover > #secondUl{
-    display: flex;
+.dropdown li{
+    background: transparent;
+    width:inherit;
+   
 }
+
 
 /* -----------------------section------------- */
 
@@ -315,7 +330,6 @@ h5{
 @media screen and (max-width:850px) {
     .container{
         background-color: white;
-        
         margin:0;
     }
     .navbar{
@@ -333,6 +347,7 @@ h5{
     .logo img{
         width: 100px;
         display: block;
+        margin-left: -10px;
     }
     #firstUl{
         display: block;

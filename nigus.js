@@ -10,7 +10,6 @@ const observer =new IntersectionObserver((entries)=> {
     });
 });
 
-
 const hide=document.querySelectorAll(".hidden");
 
 hide.forEach((e)=>observer.observe(e))
@@ -36,4 +35,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+let service=document.querySelector('.services');
+let dropmenu=document.querySelector('.dropdown');
+ 
+let count=1;
 
+function showServices(){
+    if(count===1)
+    {
+        dropmenu.style.display="flex";
+        count--;
+    }
+    else{
+        dropmenu.style.display="none";
+        console.log("2");
+        count++;
+    }
+   
+}
+service.addEventListener('click',()=>{
+showServices();
+})
