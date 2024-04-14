@@ -1,9 +1,10 @@
+
+
 const loader=document.querySelector('#loader');
 
 window.addEventListener('load',()=>{
     loader.style.display="none";
 })
-
 
 const observer =new IntersectionObserver((entries)=> {
     entries.forEach((entry)=>{
