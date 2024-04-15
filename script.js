@@ -86,15 +86,22 @@ service.addEventListener('click',()=>{
 
 let nav = document.querySelector("#firstUl");
 
-function openMenu(){
- nav.style.display="block";
-}
+const openMenu=document.querySelector('.open');
+const closeMenu=document.querySelector('.close');
 
-function closeMenu(){
-    // nav.style.right="-200px";
-    dropmenu.style.display="none";
+closeMenu.addEventListener('click',()=>{
+
+    // dropmenu.style.display="none";
     nav.style.display="none";
-}
+    openMenu.style.display='inline-block';
+});
+
+openMenu.addEventListener('click',()=>{
+
+    nav.style.display="block";
+    openMenu.style.display='none';
+})
+
 
 
 document.addEventListener('click', function(event) {
@@ -108,6 +115,7 @@ let nav = document.querySelector("#firstUl");
     if (!nav.contains(targetElement) && !menuIcon.contains(targetElement) && x.matches){
       
       nav.style.display = 'none';
+      openMenu.style.display='inline-block';
     }
 
   });

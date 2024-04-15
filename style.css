@@ -141,7 +141,7 @@ box-shadow: -4px -1px 30px -2px #d9d2d2;
     }
 
     .flex-box{
-        grid-template-columns: repeat( auto-fill, minmax(230px, 1fr) );
+        grid-template-columns: repeat( auto-fill, minmax(270px, 1fr) );
     }
     
     
