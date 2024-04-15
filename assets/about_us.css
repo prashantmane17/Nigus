@@ -1,0 +1,38 @@
+
+
+.about{
+    padding: 5px 20px;
+}
+.content div{
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+.content p{
+    color: #746f6f;
+    line-height: 2;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 5px 20px;
+}
+
+.text-img{
+    padding: 5px 20px;
+    display: flex;
+    margin-top: 40px;
+}
+.flex{
+    /* width: 450px; */
+    border: 2px solid black;
+}
+
+
+/* -------------Responsive------------- */
+
+@media screen and (max-width:520px) {
+    
+
+
+
+}
