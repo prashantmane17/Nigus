@@ -186,7 +186,7 @@ transition: .5s;
     width: 100%;
 }
 .parts .leftpart{
-    width: 100%;
+    width: unset;
     
 }
 .parts .rightpart img{
