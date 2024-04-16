@@ -1,0 +1,140 @@
+
+
+.section1{
+    background: rgb(217, 235, 234);
+}
+.section3{
+    background: rgb(217, 235, 234);
+}
+.section h3{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding: 10px;
+}
+.flex-box{
+    display: flex;
+}
+
+.flex-box .box {
+    padding: 20px;
+    text-align: center;
+}
+.flex-box .box p{
+    text-align: left;
+    font-weight: 300;
+    color: rgb(112, 111, 111);
+}
+
+/* ------------------------sections2------------------ */
+
+.section2 h2{
+    font-size: 35px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.boxes{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.boxes .text{
+    width: 700px;
+    color: gray;
+    text-align: left;
+}
+ .card{
+    width: 350px ;
+    height: 350px;
+    padding: 20px;
+    box-shadow: -2px -1px 22px -2px #d9d2d2;  
+}
+.card h3{
+    font-size: 1.4rem;
+}
+.card i{
+    color: #0060c6;
+    font-size: 40px;
+}
+
+.text h3{
+    text-align: left;
+    font-size: 1.5rem;
+    color: rgb(22, 22, 22);
+}
+
+/* ------------------section3-------------- */
+
+
+
+
+
+/* -------------Responsive------------- */
+@media screen and (max-width:1024px) {
+   
+    .boxes{
+        text-align: center;
+        display: block;
+        padding: 5px;
+    }
+    .boxes .text{
+        padding: 10px;
+        width: 100%;
+        color: gray;
+        text-align: left;
+    }
+    
+    .card{
+        width: 450px;
+        margin: auto;
+        height: 300px;
+        padding: 20px;
+        box-shadow: -2px -1px 22px -2px #d9d2d2;  
+    }
+}
+
+@media screen and (max-width:768px) {
+   
+/* ------------------section---------------- */
+
+.section{
+    padding:5px 20px ;
+}
+.section h3{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 2px;
+}
+.flex-box{
+    display: block;
+}
+
+
+/* ------------------------section------ */
+.section2 h2{
+    font-size: 25px;
+}
+
+.boxes{
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
+.boxes .text{
+    padding: 10px;
+    width: 100%;
+    color: gray;
+    text-align: left;
+}
+
+.card{
+    width: 320px ;
+    height: inherit;
+    padding: 20px;
+    box-shadow: -2px -1px 22px -2px #d9d2d2;  
+}
+}

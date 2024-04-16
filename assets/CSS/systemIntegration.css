@@ -1,0 +1,188 @@
+.section1{
+    background: rgb(217, 235, 234);
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .textPart{
+    width: 50%;
+}
+.content .textPart h1{
+    letter-spacing: 1px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    padding-right: 25%;
+}
+.content .textPart p{
+    padding: 10px 20px;
+}
+.content .imgPart{
+    width: 50%;
+}
+.content .imgPart img {
+    width: 80%;
+}
+
+/* ---------------------section2-------------- */
+
+.inovate{
+    text-align: center;
+}
+.inovate .inovate-text h4{
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    padding:0    10px;
+
+}
+.inovate .inovate-text p{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    padding:5px  40px;
+}
+
+.inovate .inovate-cards{
+    width: fit-content;
+    margin: 20px 10px 10px 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.inovate .inovate-cards div{
+    width: 200px;
+    height: 135px;
+    letter-spacing: 1px;
+    padding: 34px 25px;
+    border: 2px solid rgb(189, 189, 189);
+    box-shadow: -4px -1px 30px -2px #d9d2d2;
+}
+
+/* ------------imgslider------------ */
+
+
+.img-slider img{
+    max-width: 100%;
+    border-radius:13px ;
+}
+
+/* ---------section3------------ */
+.section2 h3{
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.secondcontent{
+    padding: 20px;
+    display: flex;
+}
+.secondcontent .img, .secondcontent .text{
+    width: 50%;
+}
+.secondcontent .img img{
+    width: 100%;
+}
+.secondcontent .text p{
+    padding: 10px 3px;
+}
+.secondcontent .text span{
+    font-weight: 700;
+}
+
+
+
+/* ------section3------------ */
+
+.img-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.img-text .imgContent{
+    width: 330px;
+    height: 380px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 45px -8px #c5bfbf;
+    transition: all 0.5s;
+}
+.img-text .imgContent:hover{
+    /* background-color: #92c1ff; */
+    transform: translateY(-10px);
+}
+
+.img-text .imgContent img{
+    max-width: 45%;
+    padding: 10px;
+
+}
+
+
+.img-text .imgContent h3{
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.img-text .imgContent p{
+    color: #686868;
+    padding: 10px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .secondcontent{
+        display: block;
+    }
+    .secondcontent .img, .secondcontent .text{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .content{
+        display: block;
+    }
+    .content .textPart, .content .imgPart{
+        width: 100%;
+        
+    }
+    .content .textPart h1{
+        
+        font-size: 2.1rem;
+        padding: 10px 30px;
+
+    }
+    .content .textPart p{
+        padding: 10px 30px;
+        font-size: 1.2rem;
+    }
+    .content .imgPart{
+        padding-left: 70px;
+        padding-bottom: 30px;
+    }
+
+
+    /* ------------section2------------- */
+    .secondcontent{
+        paddingl: 20px;
+        display: block;
+    }
+    .secondcontent .img, .secondcontent .text{
+        width: 100%;
+    }
+    .secondcontent .text p{
+        padding: 10px 3px;
+    }
+}
+
+
