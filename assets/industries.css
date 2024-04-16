@@ -32,7 +32,21 @@
 
 /* -------------Responsive------------- */
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1024px) {
+    .parts{
+        display: block;
+    }
+     .parts .text{
+        width: auto;
+    }
+    .parts .img{
+        padding-top: 20px;
+        margin: auto;
+        width: 85%;
+    }
+    
+}
+@media screen and (max-width:768px) {
   
 /* ------------------section---------------- */
 
@@ -44,12 +58,18 @@
 .parts{
     display: block;
 }
-.text ul{
+ .parts .text ul{
     line-height: 1.7;
+    font-size: 1.2rem;
 }
-.text, .img{
+.parts .text{
     width: 100%;
+}
+.parts .img{
+    width: 80%;
     margin-top: 10px;
+    margin: auto;
+    padding-top: 20px;
 }
 
 }

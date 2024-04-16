@@ -73,8 +73,30 @@
 
 
 /* -------------Responsive------------- */
+@media screen and (max-width:1024px) {
+   
+    .boxes{
+        text-align: center;
+        display: block;
+        padding: 5px;
+    }
+    .boxes .text{
+        padding: 10px;
+        width: 100%;
+        color: gray;
+        text-align: left;
+    }
+    
+    .card{
+        width: 450px;
+        margin: auto;
+        height: 300px;
+        padding: 20px;
+        box-shadow: -2px -1px 22px -2px #d9d2d2;  
+    }
+}
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:768px) {
    
 /* ------------------section---------------- */
 
@@ -110,7 +132,7 @@
 }
 
 .card{
-    width: 100% ;
+    width: 320px ;
     height: inherit;
     padding: 20px;
     box-shadow: -2px -1px 22px -2px #d9d2d2;  

@@ -22,9 +22,9 @@ class Navbar extends HTMLElement{
                     <li><a href="./industries.html">Industries</a></li>
                     <li><a href="./about_us.html">About Us</a></li>
                     <li><a href="./contactUs.html">Contact Us</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    <i class="fa-solid fa-xmark close"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()" data-menuIcon></i>
+                <i class="fa-solid fa-bars open" data-menuIcon></i>
             </div>
         </nav>
     </div>

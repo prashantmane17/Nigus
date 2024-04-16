@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 ::selection{
-    background: rgb(187, 187, 187);
-    color: white;
+    background: #cccccc;
+    color: #ffffff;
 }
 
 #loader{
@@ -120,15 +120,15 @@ body {
 .dropdown{
    
     margin-top: 15px;
-    padding: 10px;
+    padding: 2px;
     display: none;
     align-items: center;
     justify-content: space-evenly;
     list-style-type: none;
     border-radius: 10px;
     background: white;
-    height: 100px;
-    width: 60vw;
+    height: 70px;
+    width: 65vw;
     transition: display 0.5s;
     box-shadow: 1px 6px 43px -27px #938787;
 }
@@ -140,7 +140,7 @@ body {
 
 .section{
     padding:30px 100px ;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -148,8 +148,24 @@ body {
 
 
 /* -----------Responsive-------------- */
+@media screen and (max-width:1024px) {
+    .container{
+        padding: 30px 50px;
+    }
+    .section{
+        padding:30px 70px;
+    }
+    .dropdown{
+        justify-content: space-between;
+    }
+   .dropdown li a{
+        font-size: 1rem !important;
 
-@media screen and (max-width:991px) {
+    }
+    
+}
+
+@media screen and (max-width:768px) {
     .container{
         background-color: white;
         margin:0;
