@@ -121,4 +121,49 @@
     }
 }
 
+@media screen and (max-width:425px) {
+    .content .textPart h1 {
+        font-size: 1.6rem;
+    line-height: 1.2;
+    padding: 20px 0;
+    }
+
+    .content .textPart p{
+        padding: 10px 0;
+    }
+
+    .content .imgPart{
+        padding: 0;
+        margin:10px 3px;
+    }
+    .content .imgPart img{
+        width: 100%;
+    }
+
+    .inovate .inovate-text h4 {
+        padding: 20px 10px;
+    }
+    .inovate .inovate-text p{
+        padding: unset;
+    }
+    .inovate .inovate-cards{
+        gap: 15px;
+        margin: 30px 10px;
+    }
+.section2{
+    padding-top: 20px;
+}
+    .section2 h3{
+        font-size: 1.4rem;
+        line-height: 1.2;
+        padding: 20px 0;
+    }
+
+    .secondcontent {
+        padding: unset;
+    }
+
+}
+
+
 

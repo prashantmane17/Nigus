@@ -138,3 +138,26 @@
     box-shadow: -2px -1px 22px -2px #d9d2d2;  
 }
 }
+
+@media screen and (max-width:425px) {
+
+    .section h3{
+        
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 17px 0;
+        letter-spacing: 1px;
+    }
+
+    .flex-box .box{
+        padding: 20px 0;
+    }
+
+    .section2 h2{
+        font-size: 31px;
+        padding: 20px 0;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    
+}

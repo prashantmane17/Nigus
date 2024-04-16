@@ -29,7 +29,7 @@
     margin-top: 40px;
 }
 .text-img .flex{
-    height:500px;
+    height:540px;
     padding: 20px;
    background: #c6ddf8;
 }
@@ -62,9 +62,10 @@
 @media screen and (max-width:768px) {
 
      .text-img .flex{
-        height:530px;
+        height:fit-content;
     }
     .about .text-img{
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
         gap: 20px;
     }
     .plain-text{
@@ -77,6 +78,9 @@
 
 @media screen and (max-width:528px) {
 
+    .about {
+        padding: 5px 0;
+    }
     .content p{
         line-height: 1.5;
         font-size: 1.1rem;
@@ -88,6 +92,7 @@
      }
     .about .text-img{
         display: block;
+        padding: 5px 0;
     }
     
     .text-img .flex{
@@ -97,6 +102,15 @@
     }
     .text-img .flex img{
         width: auto;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .plain-text {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        
     }
 
 }
