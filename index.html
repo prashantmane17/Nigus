@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,81 +11,85 @@
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/a32e229695.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   
-    <div id="loader"></div>
-        <div class="container">
+    <div data-overlay></div>
+    <div id="loader" class=""></div>
+
+    <div class="container navBarWrapper">
         <nav class="navbar">
-            <div class="logo"><a href="index.html" ><img src="./assets/img/nigus-logo.png" alt=""></a></div>
+            <div class="logo"><a href="index.html"><img src="./assets/img/nigus-logo.png" alt=""></a></div>
             <div class="nav-list">
                 <ul id="firstUl">
-                    <li class="services"  ><a>Services</a> 
-                        <ul  class='dropdown mobiledropdown' data-mobiledropdown id = "hello">
+                    <li class="services"><a>Services</a>
+                        <ul class='dropdown mobiledropdown' data-mobiledropdown id="hello">
                             <li><a class="live" href="index.html">Web Development</a></li>
                             <li><a href="./assets/HTML/appDevelopment.html">App Development</a></li>
                             <li><a href="./assets/HTML/softwareDevelopment.html">Software Development</a></li>
                             <li><a href="./assets/HTML/ai_ml.html">AI/ML Development</a></li>
-                            <li><a href="./assets/HTML/systemIntegration.html">System Integration   </a></li>
-                            
+                            <li><a href="./assets/HTML/systemIntegration.html">System Integration </a></li>
+
                         </ul>
-                        
+
                     </li>
 
                     <li><a href="./assets/HTML/solution.html">Solutions</a></li>
                     <li><a href="./assets/HTML/industries.html">Industries</a></li>
                     <li><a href="./assets/HTML/about_us.html">About Us</a></li>
                     <li><a href="./assets/HTML/contactUs.html">Contact Us</a></li>
-                    <i class="fa-solid fa-xmark close" onclick="closeMenu()"></i>
+                    <i class="fa-solid fa-xmark close"></i>
                 </ul>
-                <i class="fa-solid fa-bars open" onclick="openMenu()" data-menuIcon></i>
+                <i class="fa-solid fa-bars open" data-menuIcon></i>
             </div>
         </nav>
     </div>
 
     <!-- ---------section------ -->
 
-        <section class="section section1 hidden">
-            <div class="parts">
-                <div class="leftpart">
-                    <h2>Revolutionizing <span></span> Enterprise with <span></span>Innovative Solutions</h2>
-                    <p>Modernize the organization with innovative software solutions, applications and integrations</p>
-                </div>
-                <div class="rightpart">
-                    <img loading="lazy" src="./assets/img/integration-logos.gif" alt="">
-                </div>
+    <section class="section section1 hidden">
+        <div class="parts">
+            <div class="leftpart">
+                <h2>Revolutionizing <span></span> Enterprise with <span></span>Innovative Solutions</h2>
+                <p>Modernize the organization with innovative software solutions, applications and integrations</p>
             </div>
-
-        </section>
-
-        <section class="section section2 hidden">
-            <h3>Empowering Our Partners For 10+ Years</h3>
-            <div class="flex-box">
-                <div class="flex">
-                    <h4>Projects </h4>
-                    <p class="num" value="800">800 +</p>
-                </div>
-                <div class="flex">
-                   <h4>Customers</h4>
-                    <p class="num" value="450">450 +</p>
-                </div>
-                <div class="flex">
-                    <h4>Countries</h4>
-                    <p class="num" value="7">7 +</p>
-                </div>
-                <div class="flex">
-                    <h4>Solutions</h4>
-                    <p class="num" value="20">20 +</p>
-                </div>
+            <div class="rightpart">
+                <img loading="lazy" src="./assets/img/integration-logos.gif" alt="">
             </div>
-        </section>
+        </div>
 
-        <!-- ------------image slider---------- -->
-        <section class="section section3 hidden">
+    </section>
+
+    <section class="section section2 hidden">
+        <h3>Empowering Our Partners For 10+ Years</h3>
+        <div class="flex-box">
+            <div class="flex">
+                <h4>Projects </h4>
+                <p class="num" value="800">800 +</p>
+            </div>
+            <div class="flex">
+                <h4>Customers</h4>
+                <p class="num" value="450">450 +</p>
+            </div>
+            <div class="flex">
+                <h4>Countries</h4>
+                <p class="num" value="7">7 +</p>
+            </div>
+            <div class="flex">
+                <h4>Solutions</h4>
+                <p class="num" value="20">20 +</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------image slider---------- -->
+    <section class="section section3 hidden">
         <div class="slider">
             <img src="./assets/img/1.png" alt="Image 1" class="slide">
             <img src="./assets/img/2.png" alt="Image 2" class="slide">
@@ -92,85 +97,93 @@
         </div>
 
 
-          
+
     </section>
 
-<!-- -------------------------Cards-------------- -->
-        <section class="section section4 ">
-            <div class="firsthalf hidden">
-                <h2>Innovative IT Solutions</h2>
-                <p>Utilize our software development expertise to seamlessly integrate business applications with new or existing systems, ensuring streamlined operations and enhanced efficiency.</p>
-            </div>
-            <div class="secondhalf hidden">
-                <div class="cards">
-                    <img src="./assets/img/apps.png" alt="">
-                    <p>Web Development</p>
-                </div>
-                <div class="cards">
-                    <img src="./assets/img/appDevelop.png" alt="">
-                    <p>Application Development</p>
-                </div>
-                <div class="cards">
-                    <img src="./assets/img/softwaredev.png" alt="">
-                    <p>Software Development</p>
-                </div>
-                <div class="cards">
-                    <img src="./assets/img/AIMLdev.png" alt="">
-                    <p>AI/ML Development</p>
-                </div>
-                    <div class="cards">
-                        <img src="./assets/img/systeminte.png" alt="">
-                        <p>System Integration</p>
-                    </div>
-                    <div class="cards">
-                        <img src="./assets/img/crm integration.png" alt="">
-                        <p>CRM Integration</p>
-                    </div>
-                    <div class="cards">
-                        <img src="./assets/img/appintegration.png" alt="">
-                        <p>Application Integration</p>
-                    </div>
-                </div>
-        </section>
-
-        <section class="section section5 hidden">
-            <div class="parts parts2">
-                <div class="leftpart">
-                    <h2>Excellence in Every Delivery</h2>
-                    <p>Our services are designed to help businesses establish a robust online presence in the digital age. We empower our clients to create impactful websites that effectively engage users and provide seamless experiences. Whether it's an enterprise software, a corporate website, or a web application, we leverage our creativity and technical expertise to develop responsive, user-friendly.</p>
-                </div>
-                <div class="rightpart">
-                    <img src="./assets/img/business-conferencing.png" alt="">
-                </div>
-            </div>
-
-        </section>
-<!-- -----------footer-------------- -->
-        
-<footer class="footer hidden">
-    <div class="content-left">
-        <a href="index.html" ><img src="./assets/img/nigus-logo.png" alt=""></a>
-        <h3>Nigus Systems Private Limited
-        </h3>
-        <p>We work across 24 x 7 to help you run your business without any hassle</p>
-        <a href="" class="icon"><i class="fa-brands fa-linkedin" target=”_blank”></i></a>
-       
-    </div>
-    <div class="content-right">
-        <div class="links">
-            <a href="mailto:#"><i class="fa-regular fa-envelope"></i>
-                sales@nigussystems.com</a>
-            <a href="tel:#"><i class="fa-solid fa-phone"></i> +91 98806 98312</a>
+    <!-- -------------------------Cards-------------- -->
+    <section class="section section4 ">
+        <div class="firsthalf hidden">
+            <h2>Innovative IT Solutions</h2>
+            <p>Utilize our software development expertise to seamlessly integrate business applications with new or
+                existing systems, ensuring streamlined operations and enhanced efficiency.</p>
         </div>
-        <div class="btns">
-            <a href="./assets/HTML/contactUs.html" class="button"><i class="fa-regular fa-user"></i>Sales</a>
-            <a href="./assets/HTML/contactUs.html" class="button"><i class="fa-solid fa-headphones-simple"></i>Support</a>
+        <div class="secondhalf hidden">
+            <div class="cards">
+                <img src="./assets/img/apps.png" alt="">
+                <p>Web Development</p>
+            </div>
+            <div class="cards">
+                <img src="./assets/img/appDevelop.png" alt="">
+                <p>Application Development</p>
+            </div>
+            <div class="cards">
+                <img src="./assets/img/softwaredev.png" alt="">
+                <p>Software Development</p>
+            </div>
+            <div class="cards">
+                <img src="./assets/img/AIMLdev.png" alt="">
+                <p>AI/ML Development</p>
+            </div>
+            <div class="cards">
+                <img src="./assets/img/systeminte.png" alt="">
+                <p>System Integration</p>
+            </div>
+            <div class="cards">
+                <img src="./assets/img/crm integration.png" alt="">
+                <p>CRM Integration</p>
+            </div>
+            <div class="cards">
+                <img src="./assets/img/appintegration.png" alt="">
+                <p>Application Integration</p>
+            </div>
         </div>
-    </div>
-</footer>
-<h5 class="copyRight hidden">© 2024 Nigus Systems Pvt Ltd</h5>
+    </section>
 
-        <script src="./assets/JavaScript/slider.js"></script>
-        <script src="./assets/JavaScript/script.js"></script>
+    <section class="section section5 hidden">
+        <div class="parts parts2">
+            <div class="leftpart">
+                <h2>Excellence in Every Delivery</h2>
+                <p>Our services are designed to help businesses establish a robust online presence in the digital age.
+                    We empower our clients to create impactful websites that effectively engage users and provide
+                    seamless experiences. Whether it's an enterprise software, a corporate website, or a web
+                    application, we leverage our creativity and technical expertise to develop responsive,
+                    user-friendly.</p>
+            </div>
+            <div class="rightpart">
+                <img src="./assets/img/business-conferencing.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- -----------footer-------------- -->
+
+    <footer class="footer hidden">
+        <div class="content-left">
+            <a href="index.html"><img src="./assets/img/nigus-logo.png" alt=""></a>
+            <h3>Nigus Systems Private Limited
+            </h3>
+            <p>We work across 24 x 7 to help you run your business without any hassle</p>
+            <a href="" class="icon"><i class="fa-brands fa-linkedin" target=”_blank”></i></a>
+
+        </div>
+        <div class="content-right">
+            <div class="links">
+                <a href="mailto:sales@nigussystems.com"><i class="fa-regular fa-envelope"></i>
+                    sales@nigussystems.com</a>
+                <a href="tel:98806 98312"><i class="fa-solid fa-phone"></i> +91 98806 98312</a>
+            </div>
+            <div class="btns">
+                <a href="./assets/HTML/contactUs.html" class="button"><i class="fa-regular fa-user"></i>Sales</a>
+                <a href="./assets/HTML/contactUs.html" class="button"><i
+                        class="fa-solid fa-headphones-simple"></i>Support</a>
+            </div>
+        </div>
+    </footer>
+    <h5 class="copyRight hidden">© 2024 Nigus Systems Pvt Ltd</h5>
+
+
+    <script src="./assets/JavaScript/slider.js"></script>
+    <script src="./assets/JavaScript/script.js"></script>
 </body>
+
 </html>

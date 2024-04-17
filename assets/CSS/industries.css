@@ -1,89 +1,81 @@
-
-
-.parts{
-    padding:5px 20px;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
+.parts {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
-.text h3{
-    font-size: 1.7rem;
-    font-weight: 600;
+.text h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
-.text p{
-    color: #272626;
-    font-weight: 300;
-    line-height:2;
-} 
-.text ul{
-    color: #938787;
-    font-size: 1.4rem;
-    font-weight: 300;
-    line-height: 2.1;
-    margin-left: 25px;
+.text p {
+  color: #272626;
+  font-weight: 300;
+  line-height: 2;
 }
-.img, .text{
-    width: 50%;
+.text ul {
+  color: #938787;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.1;
+  margin-left: 25px;
 }
-.img img{
-    width: 100%;
+.img,
+.text {
+  width: 50%;
 }
-
+.img img {
+  width: 100%;
+}
 
 /* -------------Responsive------------- */
 
-@media screen and (max-width:1024px) {
-    .parts{
-        display: block;
-    }
-     .parts .text{
-        width: auto;
-    }
-    .parts .img{
-        padding-top: 20px;
-        margin: auto;
-        width: 85%;
-    }
-    
-}
-@media screen and (max-width:768px) {
-  
-/* ------------------section---------------- */
-
-.section{
-    padding:5px 20px ;
-}
-
-
-.parts{
+@media screen and (max-width: 1024px) {
+  .parts {
     display: block;
+  }
+  .parts .text {
+    width: auto;
+  }
+  .parts .img {
+    padding-top: 20px;
+    margin: auto;
+    width: 85%;
+  }
 }
- .parts .text ul{
+@media screen and (max-width: 768px) {
+  /* ------------------section---------------- */
+
+  .section {
+    padding: 5px 20px;
+  }
+
+  .parts {
+    display: block;
+  }
+  .parts .text ul {
     line-height: 1.7;
     font-size: 1.2rem;
-}
-.parts .text{
+  }
+  .parts .text {
     width: 100%;
-}
-.parts .img{
+  }
+  .parts .img {
     width: 80%;
     margin-top: 10px;
     margin: auto;
     padding-top: 20px;
+  }
 }
 
-}
+@media screen and (max-width: 425px) {
+  .text h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 20px 0;
+  }
 
-
-@media screen and (max-width:425px) {
-    .text h3{
-        font-size: 2.5rem;
-        font-weight: 600;
-        padding: 20px 0;
-    }
-
-    .text p{
-        line-height: 1.5;
-    }
-
+  .text p {
+    line-height: 1.5;
+  }
 }

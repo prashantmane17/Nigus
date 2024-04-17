@@ -1,7 +1,9 @@
-class Navbar extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML=` <div id="loader"></div>
-        <div class="container">
+class Navbar extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = ` <div data-overlay></div>
+        <div id="loader" class=""></div>
+    
+        <div class="container navBarWrapper">
         <nav class="navbar">
             <div class="logo"><a href="../../index.html" ><img src="../img/nigus-logo.png" alt=""></a></div>
             <div class="nav-list">
@@ -31,12 +33,12 @@ class Navbar extends HTMLElement{
 `
     }
 }
-customElements.define('app-navbar',Navbar);
+customElements.define('app-navbar', Navbar);
 
 
-class Footer extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML=`<footer class="footer hidden">
+class Footer extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<footer class="footer hidden">
         <div class="content-left">
             <a href="../../index.html" ><img src="../img/nigus-logo.png" alt=""></a>
             <h3>Nigus Systems Private Limited
@@ -47,9 +49,9 @@ class Footer extends HTMLElement{
         </div>
         <div class="content-right">
             <div class="links">
-                <a href="mailto:#"><i class="fa-regular fa-envelope"></i>
+                <a href="mailto:sales@nigussystems.com"><i class="fa-regular fa-envelope"></i>
                     sales@nigussystems.com</a>
-                <a href="tel:#"><i class="fa-solid fa-phone"></i> +91 98806 98312</a>
+                <a href="tel:98806 98312"><i class="fa-solid fa-phone"></i> +91 98806 98312</a>
             </div>
             <div class="btns">
             <a href="../../contactUs.html" class="button"><i class="fa-regular fa-user"></i>Sales</a>
@@ -60,4 +62,4 @@ class Footer extends HTMLElement{
     <h5 class="copyRight hidden">© 2024 Nigus Systems Pvt Ltd</h5>`
     }
 }
-customElements.define('app-footer',Footer);
+customElements.define('app-footer', Footer);
