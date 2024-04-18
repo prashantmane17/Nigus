@@ -40,10 +40,10 @@ function myFunction(x) {
 function showServices() {
     if (count === 1) {
         myFunction(x);
-        count--;
+        count=0;
     } else {
         dropmenu.style.display = "none";
-        count++;
+        count=1;
     }
 }
 
@@ -91,7 +91,7 @@ document.addEventListener('click', function (event) {
     }
     else if(!nav.contains(targetElement) && !menuIcon.contains(targetElement) ){
         dropmenu.style.display = "none";
-        count++;
+        count=1;
     }
 });
 
