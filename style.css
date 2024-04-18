@@ -9,8 +9,7 @@
 
 /* -------------Section------ */
 .particles-js-canvas-el{
-    width: 100%;
-    /* height: 100vh; */
+    width: 95% !important;
     position: absolute;
 
 }
@@ -175,7 +174,7 @@ box-shadow: -4px -1px 30px -2px #d9d2d2;
 }
 
 .cards .front img{
-    padding: 10px;
+    width: 160px;
 
 }
 .cards .back{

@@ -89,5 +89,9 @@ document.addEventListener('click', function (event) {
         overlay?.classList.remove("overlay");
         body.style.overflow = "auto";
     }
+    else if(!nav.contains(targetElement) && !menuIcon.contains(targetElement) ){
+        dropmenu.style.display = "none";
+        count++;
+    }
 });
 
