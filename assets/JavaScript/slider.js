@@ -1,22 +1,18 @@
-document.addEventListener("DOMContentLoaded",  ()=> {
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
 
-    function showSlide(n) {
-        if (n != 0) {
+const slid = document.querySelectorAll('.imgg');
+let currentSlid = 1;
 
-            slides[n - 1].classList.remove('active');
-        }
-        else {
-            slides[2].classList.remove('active');
-        }
-        slides[n].classList.add('active');
-    }
+function imgSlid(n) {
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
+    slid.forEach((slide) => {
+        slide.classList.remove('active');
+    });
+    slid[n].classList.add("active");
+}
 
-    setInterval(nextSlide, 2000);
-});
+function number() {
+    currentSlid = (currentSlid + 1) % slid.length;
+    imgSlid(currentSlid);
+}
+setInterval(number, 2000);
+

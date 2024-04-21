@@ -153,9 +153,6 @@ body {
   background: transparent;
   width: inherit;
 }
-.navbar .fa-solid {
-  display: none;
-}
 
 .section {
   padding: 30px 50px;

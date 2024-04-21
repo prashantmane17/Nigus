@@ -1,7 +1,7 @@
-.section1, .section2 {
+.section1,
+.section2 {
   background: rgb(217, 235, 234);
 }
-
 
 .content {
   display: flex;
@@ -59,18 +59,69 @@
   padding: 34px 25px;
   border-radius: 10px;
   box-shadow: -4px -1px 30px -2px #d9d2d2;
-  transition:all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.inovate .inovate-cards div:hover{
-    transform: scale(1.1);
-    background: rgb(119, 161, 224);
+.inovate .inovate-cards div:hover {
+  transform: scale(1.1);
+  background: rgb(119, 161, 224);
 }
 /* ------------imgslider------------ */
 
-.img-slider img {
-  max-width: 100%;
-  border-radius: 13px;
+.div {
+  height: 100px;
+  margin: 20px 10px;
+  overflow: hidden;
+  background-color: #6868682c;
+  border-radius: 10px;
+}
+
+.div .imgg {
+  display: none;
+}
+
+.div .imgg img {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  mix-blend-mode: multiply;
+  padding: 2px 40px;
+}
+
+.div .active {
+  display: block;
+  position: relative;
+  z-index: -1;
+  animation: slider 2s linear;
+  filter: blur(0);
+  transition: all ease;
+}
+
+@keyframes slider {
+  from {
+    transform: translateY(60px);
+  }
+
+  to {
+    transform: translateY(-110px);
+    filter: blur(1);
+    opacity: 0.6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div .imgg img {
+    width: 100px;
+    height: 50px;
+    padding: 2px 20px;
+  }
+}
+@media screen and (max-width: 329px) {
+  .div .imgg img {
+    width: 90px;
+    height: 50px;
+    padding: 2px 20px;
+  }
 }
 
 /* ---------section3------------ */
@@ -90,6 +141,7 @@
 }
 .secondcontent .img img {
   width: 100%;
+  mix-blend-mode: multiply;
 }
 .secondcontent .text p {
   padding: 10px 3px;

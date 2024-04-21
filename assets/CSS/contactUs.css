@@ -19,10 +19,10 @@
   box-shadow: -2px -1px 22px -2px #d9d2d2;
   border-radius: 10px;
   padding: 10px;
-  transition: background 2s;
+  transition: background-color 1s;
 }
 .contact:hover {
-  background: #cadcee;
+  background-color: #cadcee;
 }
 .contact i {
   font-size: 2.5rem;
