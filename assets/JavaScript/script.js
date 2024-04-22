@@ -21,6 +21,21 @@ const hide = document.querySelectorAll(".hidden");
 
 hide.forEach((e) => observer.observe(e))
 
+
+// --------------scrollbar-----------------
+
+const scroll_line = document.querySelector('.scrollbar');
+
+window.onscroll = () => {
+
+    const { innerHeight, scrollY } = window;
+    const { clientHeight } = document.body;
+    const height = clientHeight - innerHeight;
+    const status = (scrollY / height) * 100;
+    console.log(status);
+    scroll_line.style.width = status + "%"
+}
+
 // ----------Menubar-------------
 let service = document.querySelector('.services');
 let dropmenu = document.querySelector('.dropdown');
@@ -40,10 +55,10 @@ function myFunction(x) {
 function showServices() {
     if (count === 1) {
         myFunction(x);
-        count=0;
+        count = 0;
     } else {
         dropmenu.style.display = "none";
-        count=1;
+        count = 1;
     }
 }
 
@@ -89,9 +104,9 @@ document.addEventListener('click', function (event) {
         overlay?.classList.remove("overlay");
         body.style.overflow = "auto";
     }
-    else if(!nav.contains(targetElement) && !menuIcon.contains(targetElement) ){
+    else if (!nav.contains(targetElement) && !menuIcon.contains(targetElement)) {
         dropmenu.style.display = "none";
-        count=1;
+        count = 1;
     }
 });
 

@@ -2,6 +2,7 @@ class Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = ` <div data-overlay></div>
         <div id="loader" class=""></div>
+        <div class="scrollbar"></div>
     
         <div class="container navBarWrapper">
         <nav class="navbar">
